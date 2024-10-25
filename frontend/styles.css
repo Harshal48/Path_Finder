@@ -1,0 +1,65 @@
+/* frontend/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #f0f7ff, #dff1e0); /* Light gradient background */
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(6, 40px); /* 6 columns */
+    grid-template-rows: repeat(6, 40px);    /* 6 rows */
+    gap: 2px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #cfcfcf;
+}
+
+.start { background-color: #4CAF50; }   /* Green for start */
+.end { background-color: #FF5722; }     /* Red for end */
+.obstacle { background-color: #424242; } /* Dark gray for obstacles */
+.path { background-color: #2196F3; }     /* Blue for path */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 123, 255, 0.4);
+}
